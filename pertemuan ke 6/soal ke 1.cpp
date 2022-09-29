@@ -12,7 +12,7 @@ int main()
     cout << Y << endl;
     cout << Z << endl;
     cout << K << endl;
-    cout << "Hasil dari penjumlahan keempat bilangan terbeut ialah: " << sum << endl;
+    cout << "Hasil dari penjumlahan 4 bilangan tersebut ialah: " << sum << endl;
 
     return 0;
 }
