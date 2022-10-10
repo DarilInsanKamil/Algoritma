@@ -1,4 +1,4 @@
-// Buat alogritma
+// Buat alogritmay
 
 #include <iostream>
 using namespace std;
