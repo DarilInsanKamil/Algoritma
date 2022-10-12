@@ -1,4 +1,3 @@
-
 // Buat diagram tree dengan 5 kesimpulan
 // Jelaskan permasalahannya
 // Jelaskan isi variabelnya
@@ -14,7 +13,6 @@ main()
     char jenis, kaki, makan, lari, hewan;
     string a = "iya hewan", b = "sayang sekali kamu salah", c = "berkaki 4", e = "makan daging", f = "Iya larinya cepat", g = "Iya Benar!!!";
 
-    cout << "===== Tebak-Tebakan =====" << endl;
     cout << "jawab dengan y atau t" << endl;
 
     cout << "Apakah dia hewan: ";
