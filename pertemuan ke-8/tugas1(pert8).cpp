@@ -10,79 +10,60 @@ using namespace std;
 
 main()
 {
-    char jenis, kaki, makan, lari, hewan;
-    string a = "iya hewan", b = "sayang sekali kamu salah", c = "berkaki 4", e = "makan daging", f = "Iya larinya cepat", g = "Iya Benar!!!";
+    char order, sugar, cup, cold;
+    string z = "tidak pesan", a = "Es kopi susu large", b = "Kopi hitam panas large", c="Kopi susu large", d="Es Kopi Hitam medium", e="Es Kopi susu medium", f="Kopi hitam large", g="Es Kopi hitam large", h="Kopi susu medium";
+    cout << "Ngopi gak: ";
+    cin >> order;
 
-    cout << "jawab dengan y atau t" << endl;
+    cout << "pake gula?: ";
+    cin >> sugar;
+    cout << "Ukurannya medium: ";
+    cin >> cup;
+    cout << "mau yang dingin: ";
+    cin >> cold;
 
-    cout << "Apakah dia hewan: ";
-    cin >> jenis;
-
-    if (jenis == 'y')
+    switch (order)
     {
-        cout << a << endl;
-
-        cout << "Apakah dia berkaki 4: ";
-        cin >> kaki;
-        switch (kaki)
+    case 'y':
+        if (sugar && cup && cold == 'y')
         {
-        case 'y':
+            cout << a << endl;
+        }
+        else if (sugar && cup && cold == 't')
+        {
+            cout << b << endl;
+        }
+        else if (sugar && cup == 'y' && cold == 't')
+        {
             cout << c << endl;
-            break;
-
-        case 't':
-            cout << b << endl;
-            break;
-        default:
-            break;
         }
-
-        cout << "Apakah dia makan daging: ";
-        cin >> makan;
-        switch (makan)
+        else if (sugar && cup == 't' && cold == 'y')
         {
-        case 'y':
+            cout << d << endl;
+        }
+        else if (sugar && cold == 'y' && cup == 't')
+        {
             cout << e << endl;
-            break;
-
-        case 't':
-            cout << b << endl;
-            break;
-        default:
-            break;
         }
-
-        cout << "Apakah dia berlari cepat: ";
-        cin >> lari;
-        switch (lari)
+        else if (sugar && cold == 't' && cup == 'y')
         {
-        case 'y':
             cout << f << endl;
-            break;
-
-        case 't':
-            cout << b << endl;
-            break;
-        default:
-            break;
         }
-
-        cout << "Apakah dia Macan: ";
-        cin >> hewan;
-        switch (hewan)
+        else if (cold && cup == 'y' && sugar == 't')
         {
-        case 'y':
             cout << g << endl;
-            break;
+        }
+        else if (cold && cup == 't' && sugar == 'y')
+        {
+            cout << h << endl;
+        }
+        break;
 
-        case 't':
-            cout << b << endl;
-            break;
-        default:
-            break;
-        }
-        }
-    else
-    {
-        cout << b << endl;
+    case 't':
+        cout << z << endl;
+        break;
+
+    default:
+        break;
     }
+}
