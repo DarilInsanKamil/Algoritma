@@ -1,19 +1,46 @@
-// Buat diagram tree dengan 5 kesimpulan
-// Jelaskan permasalahannya
-// Jelaskan isi variabelnya
-// Buatlah pengertiannya
-// Tampilkan semua output kesimpulan
-
 #include <iostream>
-
 using namespace std;
-
-main()
+int main()
 {
-    char order, sugar, cup, cold;
-    string z = "tidak pesan", a = "Es kopi susu large", b = "Kopi hitam panas medium", c = "Kopi susu panas large", d = "Es Kopi Hitam medium", e = "Es Kopi susu medium", f = "Kopi hitam panas large", g = "Es Kopi hitam large", h = "Kopi susu panas medium";
-    cout << "Ngopi gak: ";
+    char order, temp, taste;
+    string a = "Udah minum kopi", b = "Es Kopi susu", c = "Es kopi hitam ", d = " Kopi susu panas ", e = " Kopi hitam panas ";
+    cout << "Jawab dengan y dan t" << endl;
+    cout << "Mau pesan kopi? ";
     cin >> order;
-
-   
+    switch (order)
+    {
+    case 'y':
+        cout << "Mau yang dingin? ";
+        cin >> temp;
+        cout << "Mau yang manis? ";
+        cin >> taste;
+        if (temp == 'y')
+        {
+            if (taste == 'y')
+            {
+                cout << b << endl;
+            }
+            else if (taste == 't')
+            {
+                cout << c << endl;
+            }
+        }
+        else if (temp == 't')
+        {
+            if (taste == 'y')
+            {
+                cout << d << endl;
+            }
+            else if (temp == 't')
+            {
+                cout << e << endl;
+            }
+        }
+        break;
+    case 't':
+        cout << a << endl;
+        break;
+    default:
+        break;
+    }
 }
