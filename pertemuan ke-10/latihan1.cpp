@@ -14,7 +14,7 @@ main()
     // Menyimpan Nilai ke variabel a
     cin >> a;
 
-    // Cara 1 menggunakan switch
+    // cara 3
     switch (a)
     {
     // pada case 1 (user menginput 1 ke variabel a) maka ia memilih buku
@@ -25,18 +25,18 @@ main()
         cin >> uang;
         // pada percabangan ini mempunyai kondisi jika uang lebih atau sama dengan harga buku maka
         // mengubah nilai variabel kembalian menjadi uang dikurang dengan harga buku.
-        if (uang >= buku)
+        if (buku > uang)
+        {
+            cout << "uang anda kurang" << endl;
+        }
+        // pada percabangan ini mempunyai kondisi jika uang kurang dari harga buku maka
+        // mencetak uang anda kurang.
+        else if (buku <= uang)
         {
             // mengubah nilai kembakian menjadi uang dikurang dengan harga buku
             kembalian = uang - buku;
             // Mencetak variabel kembalian
             cout << "Kamu memmilih Buku sisa uang kamu " << kembalian << endl;
-        }
-        // pada percabangan ini mempunyai kondisi jika uang kurang dari harga buku maka
-        // mencetak uang anda kurang.
-        else if (uang < buku)
-        {
-            cout << "uang anda kurang" << endl;
         }
         break;
     // pada case 1 (user menginput 1 ke variabel (a) maka ia memilih buku
@@ -47,24 +47,78 @@ main()
         cin >> uang;
         // pada percabangan ini mempunyai kondisi jika uang lebih atau sama dengan harga pensil maka
         // mengubah nilai variabel kembalian menjadi uang dikurang dengan harga pensil.
-        if (uang >= pensil)
+        if (pensil > uang)
+        {
+            cout << "uang anda kurang" << endl;
+        }
+        // pada percabangan ini mempunyai kondisi jika uang kurang dari harga pensil maka
+        // mencetak uang anda kurang.
+        else if (pensil <= uang)
         {
             // mengubah nilai kembakian menjadi uang dikurang dengan harga pensil
             kembalian = uang - pensil;
             // Mencetak variabel kembalian
             cout << "Kamu memmilih Pensil sisa uang kamu " << kembalian << endl;
         }
-        // pada percabangan ini mempunyai kondisi jika uang kurang dari harga pensil maka
-        // mencetak uang anda kurang.
-        else if (uang < pensil)
-        {
-            cout << "uang anda kurang" << endl;
-        }
+        break;
     default:
         // Jika semua case tidak sama maka akan mencetak ini
         cout << "Inputan tidak valid" << endl;
         break;
     }
+
+    // Cara 1 menggunakan switch
+    // switch (a)
+    // {
+    // // pada case 1 (user menginput 1 ke variabel a) maka ia memilih buku
+    // case 1:
+    //     cout << "Anda memilih buku" << endl;
+    //     // Input nilai uang ke variabel uang
+    //     cout << "Masukan uang anda ";
+    //     cin >> uang;
+    //     // pada percabangan ini mempunyai kondisi jika uang lebih atau sama dengan harga buku maka
+    //     // mengubah nilai variabel kembalian menjadi uang dikurang dengan harga buku.
+    //     if (uang >= buku)
+    //     {
+    //         // mengubah nilai kembakian menjadi uang dikurang dengan harga buku
+    //         kembalian = uang - buku;
+    //         // Mencetak variabel kembalian
+    //         cout << "Kamu memmilih Buku sisa uang kamu " << kembalian << endl;
+    //     }
+    //     // pada percabangan ini mempunyai kondisi jika uang kurang dari harga buku maka
+    //     // mencetak uang anda kurang.
+    //     else if (uang < buku)
+    //     {
+    //         cout << "uang anda kurang" << endl;
+    //     }
+    //     break;
+    // // pada case 1 (user menginput 1 ke variabel (a) maka ia memilih buku
+    // case 2:
+    //     cout << "Anda memilih pensil" << endl;
+    //     // Input nilai uang ke variabel uang
+    //     cout << "Masukan uang anda ";
+    //     cin >> uang;
+    //     // pada percabangan ini mempunyai kondisi jika uang lebih atau sama dengan harga pensil maka
+    //     // mengubah nilai variabel kembalian menjadi uang dikurang dengan harga pensil.
+    //     if (uang >= pensil)
+    //     {
+    //         // mengubah nilai kembakian menjadi uang dikurang dengan harga pensil
+    //         kembalian = uang - pensil;
+    //         // Mencetak variabel kembalian
+    //         cout << "Kamu memmilih Pensil sisa uang kamu " << kembalian << endl;
+    //     }
+    //     // pada percabangan ini mempunyai kondisi jika uang kurang dari harga pensil maka
+    //     // mencetak uang anda kurang.
+    //     else if (uang < pensil)
+    //     {
+    //         cout << "uang anda kurang" << endl;
+    //     }
+    // default:
+    //     // Jika semua case tidak sama maka akan mencetak ini
+    //     cout << "Inputan tidak valid" << endl;
+    //     break;
+    // }
+
     // Cara 2
     // Jika a sama dengan 1 maka akan mencetak anda memilih buku dan input value uang
     //  if (a == 1)
