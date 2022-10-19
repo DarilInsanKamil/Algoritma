@@ -23,17 +23,17 @@ main()
         // Input nilai uang ke variabel uang
         cout << "Masukan uang anda ";
         cin >> uang;
-        // pada percabangan ini mempunyai kondisi jika uang lebih atau sama dengan harga buku maka
-        // mengubah nilai variabel kembalian menjadi uang dikurang dengan harga buku.
+        // pada percabangan ini mempunyai kondisi jika buku lebih dari uang yang dimiliki maka
+        // menceteak uang anda kurang.
         if (buku > uang)
         {
             cout << "uang anda kurang" << endl;
         }
-        // pada percabangan ini mempunyai kondisi jika uang kurang dari harga buku maka
-        // mencetak uang anda kurang.
+        // pada percabangan ini mempunyai kondisi jika harga buku kurang dari uang yang dipunya maka
+        // mengubah nilai kembalian menjadi uang dikurang harga buku.
         else if (buku <= uang)
         {
-            // mengubah nilai kembakian menjadi uang dikurang dengan harga buku
+            // mengubah nilai kembalian menjadi uang dikurang dengan harga buku
             kembalian = uang - buku;
             // Mencetak variabel kembalian
             cout << "Kamu memmilih Buku sisa uang kamu " << kembalian << endl;
@@ -45,14 +45,14 @@ main()
         // Input nilai uang ke variabel uang
         cout << "Masukan uang anda ";
         cin >> uang;
-        // pada percabangan ini mempunyai kondisi jika uang lebih atau sama dengan harga pensil maka
-        // mengubah nilai variabel kembalian menjadi uang dikurang dengan harga pensil.
+        // pada percabangan ini mempunyai kondisi jika harga pensil lebih dari uang yang dimiliki maka
+        // menceteak uang anda kurang.
         if (pensil > uang)
         {
             cout << "uang anda kurang" << endl;
         }
-        // pada percabangan ini mempunyai kondisi jika uang kurang dari harga pensil maka
-        // mencetak uang anda kurang.
+        // pada percabangan ini mempunyai kondisi jika harga pensil kurang dari uang yang dipunya maka
+        // mengubah nilai kembalian menjadi uang dikurang harga pensil.
         else if (pensil <= uang)
         {
             // mengubah nilai kembakian menjadi uang dikurang dengan harga pensil
@@ -113,6 +113,7 @@ main()
     //     {
     //         cout << "uang anda kurang" << endl;
     //     }
+    // break;
     // default:
     //     // Jika semua case tidak sama maka akan mencetak ini
     //     cout << "Inputan tidak valid" << endl;
