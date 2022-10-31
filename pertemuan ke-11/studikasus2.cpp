@@ -15,9 +15,21 @@ int main()
          cout << i << endl;
      }
      cout << "Bilangan Bulat negatif" << endl;
-     for (int a = -1; a >= b; a--)
+     for (int a = 1; a >= b; a--)
      {
          cout << a << endl;
      }
 
+    // Bilangan genap dan ganjil
+    for (int i = 1; i < 10; i++)
+    {
+        if (i % 2 == 0)
+        {
+            cout << i << " genap" << endl;
+        }
+        else if (i % 2 == 1)
+        {
+            cout << i << " ganjil" << endl;
+        }
+    }
 }
