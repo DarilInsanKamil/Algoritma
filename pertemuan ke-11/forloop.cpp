@@ -11,11 +11,8 @@ int main()
         cin >> uang;
         bayar = bayar + uang;
         kembalian = bayar - total;
-        if (uang < total)
-        {
-            cout<<"Uang anda tidak cukup"<<endl;
-        }
     }
+    cout << "=======================" << endl;
     cout << "Total belanja kamu Rp." << total << endl;
     cout << "Total uang kamu Rp." << bayar << endl;
     cout << "kembalian Rp." << kembalian << endl;
