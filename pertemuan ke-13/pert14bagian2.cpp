@@ -3,8 +3,7 @@ using namespace std;
 
 int main()
 {
-    string nama, jurusan, tema, hasil;
-    float nim;
+    string nama, jurusan, tema, hasil, nim;
     int semester, pilihan, j1, j2, j3, nilai;
     cout << "Masukan Nama ";
     getline(cin, nama);
@@ -45,7 +44,7 @@ int main()
     default:
         break;
     }
-    
+
     cout << "Nilai Juri 1 ";
     cin >> j1;
     cout << "Nilai Juri 2 ";
