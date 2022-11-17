@@ -54,6 +54,7 @@ int main()
 
     nilai = j1 + j2 + j3;
     nilai = nilai / 3;
+
     if (nilai > 100)
     {
         nilai = 100;
