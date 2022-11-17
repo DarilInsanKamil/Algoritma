@@ -3,14 +3,14 @@ using namespace std;
 
 int main()
 {
-    string nama, jurusan, tema;
-    int semester, pilihan, nim;
+    string nama, jurusan, tema, nim;
+    int semester, pilihan;
     cout << "Masukan Nama: ";
     getline(cin, nama);
-    cout << "Masukan Nim: ";
-    cin >> nim;
     cout << "Masukan Jurusan: ";
     getline(cin, jurusan);
+    cout << "Masukan Nim: ";
+    cin >> nim;
     cout << "1. Pemrograman" << endl;
     cout << "2. Desain Poster" << endl;
     cout << "Pilih Lomba yang mau kamu ikuti ";

@@ -1,7 +1,3 @@
-// Cetak bilangan bulat
-// Cetak bilangan positif
-// Cetak bilangan negatif
-// Cetak bilangan genap dan ganjil
 #include <iostream>
 using namespace std;
 
