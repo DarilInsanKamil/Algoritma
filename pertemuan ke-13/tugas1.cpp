@@ -42,7 +42,7 @@ int main()
             skema = "Lomba Pemrograman Lanjutan";
         }
     default:
-        cout<<"Lomba tidak valid";
+        cout << "Lomba tidak valid";
         break;
     }
     cout << "Nilai Juri 1 ";
@@ -51,32 +51,40 @@ int main()
     cin >> j2;
     cout << "Nilai Juri 3 ";
     cin >> j3;
+
+    // if (j1 > 100)
+    // {
+    //     j1 = 100;
+    // }
+    // else
+    // {
+    //     j1 = j1;
+    // }
+    // if (j2 > 100)
+    // {
+    //     j2 = 100;
+    // }
+    // else
+    // {
+    //     j2 = j2;
+    // }
+    // if (j3 > 100)
+    // {
+    //     j3 = 100;
+    // }
+    // else
+    // {
+    //     j3 = j3;
+    // }
     nilai = j1 + j2 + j3;
     nilai = nilai / 3;
-
-    if (j1 > 100)
+    if (nilai > 100)
     {
-        j1 = 100;
+        nilai = 100;
     }
-    else if (j2 > 100)
+    else
     {
-        j2 = 100;
-    }
-    else if (j3 > 100)
-    {
-        j3 = 100;
-    }
-    else if (j1 < 100)
-    {
-        j1 = j1;
-    }
-    else if (j2 < 100)
-    {
-        j2 = j2;
-    }
-    else if (j2 < 100)
-    {
-        j3 = j3;
+        nilai = nilai;
     }
 
     if (nilai > 80)
