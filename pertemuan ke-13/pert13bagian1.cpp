@@ -6,11 +6,11 @@ int main()
     string nama, jurusan, tema;
     int semester, pilihan, nim;
     cout << "Masukan Nama: ";
-    cin >> nama;
+    getline(cin, nama);
     cout << "Masukan Nim: ";
     cin >> nim;
     cout << "Masukan Jurusan: ";
-    cin >> jurusan;
+    getline(cin, jurusan);
     cout << "1. Pemrograman" << endl;
     cout << "2. Desain Poster" << endl;
     cout << "Pilih Lomba yang mau kamu ikuti ";
