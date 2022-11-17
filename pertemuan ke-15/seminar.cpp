@@ -1,22 +1,21 @@
 // alur
-// login = name, password, valid
+// login = name, password, trigger
 // pilih seminar = tema seminar
 // bayar = uang, harga, sisa
 // selesai = cetak nama, tema seminar, uang sisa
 
 #include <iostream>
 using namespace std;
-
 main()
 {
     string name, password, tema;
-    int opsi, uang = 0, harga = 50000, valid = 5, sisa;
+    int opsi, uang = 0, harga = 50000, trigger = 5, sisa;
     cout << "Login terlebih dahulu" << endl;
 
     if (name == "" && password == "")
     {
         // Login
-        for (int i; valid < 6;)
+        for (int i; trigger < 6;)
         {
             cout << "\n======= LOGIN =======" << endl;
             cout << "Masukan username: ";
@@ -26,7 +25,7 @@ main()
             cout << "======================" << endl;
             if (name == "daril" && password == "123")
             {
-                valid = 7;
+                trigger = 7;
                 cout << "Login Berhasil!!!" << endl;
             }
             else
@@ -34,8 +33,9 @@ main()
                 cout << "username atau password tidak valid" << endl;
             }
         }
-        // Tema Seminar
-        for (int i; valid < 8;)
+
+        // Pilih Tema Seminar
+        for (int i; trigger < 8;)
         {
             cout << "\n========= TEMA SEMINAR ==========" << endl;
             cout << "1. Pengenalan UI/UX" << endl;
@@ -46,13 +46,14 @@ main()
             cout << "==================================" << endl;
             if (opsi <= 3)
             {
-                valid = 9;
+                trigger = 9;
             }
             else
             {
                 cout << "Tema tidak tersedia, pilih antara 1 - 3\n";
             }
         }
+
         // assign tema
         if (opsi == 1)
         {
@@ -66,8 +67,8 @@ main()
         {
             tema = "Web Developer";
         }
-        // pembayaran
 
+        // Pembayaran
         cout << "\n============== TOTAL ===============" << endl;
         cout << "Total yang harus dibayar " << harga << endl;
         cout << "====================================" << endl;
@@ -91,7 +92,7 @@ main()
             }
         }
 
-        // kesimpulan
+        // Kesimpulan
         cout << "\n============ KESIMPULAN =============" << endl;
         cout << "Nama: " << name << endl;
         cout << "Seminar yang diikuti: " << tema << endl;
